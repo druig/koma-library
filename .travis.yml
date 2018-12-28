@@ -19,3 +19,4 @@ deploy:
   file: target/koma-library-*.jar
   on:
     repo: druig/koma-library
+    tags: false
