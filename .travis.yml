@@ -8,6 +8,12 @@ cache:
 jdk:
   - openjdk11
 deploy:
+  provider: pages
+  local-dir: target
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  on:
+    branch: master
   provider: releases
   api_key:
     secure: AG05dw9BrM8v/OiLI7DY+1ZGc2YDqWY4K2Boq3sqes4YC0VNaGzi6Tt+1hn4SN/gzfgxkN0tIK8mraBe2OL3X6PuQLySv3/UsftQ/egspyI7aOHc6v/9Iay2wZtvT57DxJrt67vnwPp7aZ2/6utirNXs0QhYQLjzSmB5XQl9I5uKWP14MyhDtT8LKH0KILwgtZrecX5a4cNfUq6kZn70NRckFWbASRKoRRdaZ8WjadL+G4V/a3za4nlX7OStS4YoAQHLB6p1y1SS621tjmfuiTirUFxAzsYvNtRa484AI9nNLuBlNwW07JtUrLMIwBAd29yvrZwyvtpqhHBH3uE2QfD4wJC729XwKoZShHeBPKLeV4KVtSoOYIDPAc2lluUwC1tsxYopZDraZQEh3jWKj5+3sT4D2casIcYumTvK1J8rGICOG2SX4G1EPfc8+3RhGv5K4xemgpf7jmVazk04a5FvqLd5dmjyj5vCnw3DkeF413PSTcM+TXoSfEuJciQSRL7b5Tap0HlbSB1ygNEnHQybgl/Em1vo42OJ6Y8LrJHliE1iYsmJXoUzB1sOM+wID1nful735LgN/7cghkJlA4XFt6Iv/+wqLvMQcriYNhpNeVpoYsuALJLNLtlXeDKgi301g9mM+hYInQXNxqj8uowYCfQfJa95Bf7hnGtHUw8=
