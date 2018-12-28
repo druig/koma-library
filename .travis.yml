@@ -12,3 +12,10 @@ deploy:
   local-dir: target
   skip-cleanup: true
   github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  provider: releases
+  api_key: $GITHUB_TOKEN
+  skip_cleanup: true
+  file_glob: true
+  file: target/koma-library-*.jar
+  on:
+    repo: druig/koma-library
