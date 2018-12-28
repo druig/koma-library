@@ -1,0 +1,11 @@
+package koma.matrix.event.room_message.state;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 1, 13}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000N\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001B\u001f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u0012\u0006\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\b\u0082\u0001\f\t\n\u000b\f\r\u000e\u000f\u0010\u0011\u0012\u0013\u0014\u00a8\u0006\u0015"}, d2 = {"Lkoma/matrix/event/room_message/state/RoomStateEvent;", "Lkoma/matrix/event/room_message/RoomEvent;", "event_id", "Lkoma/matrix/event/EventId;", "origin_server_ts", "", "type", "Lmatrix/event/room_message/RoomEventType;", "(Lkoma/matrix/event/EventId;JLmatrix/event/room_message/RoomEventType;)V", "Lkoma/matrix/event/room_message/state/MRoomAliases;", "Lkoma/matrix/event/room_message/state/MRoomCanonAlias;", "Lkoma/matrix/event/room_message/state/MRoomCreate;", "Lkoma/matrix/event/room_message/state/MRoomJoinRule;", "Lkoma/matrix/event/room_message/state/MRoomMember;", "Lkoma/matrix/event/room_message/state/MRoomPowerLevels;", "Lkoma/matrix/event/room_message/state/MRoomPinnedEvents;", "Lkoma/matrix/event/room_message/state/MRoomTopic;", "Lkoma/matrix/event/room_message/state/MRoomName;", "Lkoma/matrix/event/room_message/state/MRoomAvatar;", "Lkoma/matrix/event/room_message/state/MRoomHistoryVisibility;", "Lkoma/matrix/event/room_message/state/MRoomGuestAccess;", "koma-library"})
+public abstract class RoomStateEvent extends koma.matrix.event.room_message.RoomEvent {
+    
+    private RoomStateEvent(koma.matrix.event.EventId event_id, long origin_server_ts, matrix.event.room_message.RoomEventType type) {
+        super(null, 0L, null);
+    }
+}
