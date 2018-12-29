@@ -7,11 +7,13 @@ cache:
   - "$HOME/.m2"
 jdk:
   - openjdk11
+before_deploy:
+  - rm target/koma-library-$TRAVIS_TAG-sources.jar
+  - mv target/koma-library-$TRAVIS_TAG.jar koma-library-$TRAVIS_TAG-$TRAVIS_OS_NAME.jar
 deploy:
   provider: releases
   api_key: $GITHUB_TOKEN
   skip_cleanup: true
-  file_glob: true
-  file: target/koma-library-*.jar
+  file: koma-library-$TRAVIS_TAG-$TRAVIS_OS_NAME.jar
   on:
     tags: true
